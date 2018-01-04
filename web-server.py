@@ -68,7 +68,7 @@ if __name__ == "__main__":
         print ('Please add SF_TOKEN as an env variable')
         sys.exit(0)
     if 'SERVER_PORT' in os.environ:
-        port = os.environ['SERVER_PORT']
+        port = int(os.environ['SERVER_PORT'])
     else:
         print ('Using default port (SERVER_PORT env variable) as 80')
         port = 80
