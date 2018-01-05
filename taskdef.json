@@ -1,0 +1,16 @@
+{
+    "family": "perc-webserver-test",
+    "containerDefinitions": [
+        {
+            "image": "harnit/percolator-webserver:v%BUILD_NUMBER%",
+            "name": "sfx-perc-webserver",
+            "cpu": 1,
+            "memory": 100,
+            "essential": true,
+            "environment": [
+            	{ "name" : "SF_TOKEN", "value" : "%TOKEN_VALUE%" },
+            	{ "name" : "SERVER_PORT", "value" : "%SERVER_PORT%" }
+            ]
+        }
+    ]
+}
