@@ -12,7 +12,8 @@
             	{ "name" : "SERVER_PORT", "value" : "%SERVER_PORT%" }
             ],
 	    "portMappings": [
-    		{ "containerPort": %SERVER_PORT% }
+    		{ "containerPort": %SERVER_PORT% },
+		{ "hostPort: %SERVER_PORT% }
 	    ]
         }
     ]
