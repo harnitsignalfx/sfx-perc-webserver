@@ -10,7 +10,10 @@
             "environment": [
             	{ "name" : "SF_TOKEN", "value" : "%TOKEN_VALUE%" },
             	{ "name" : "SERVER_PORT", "value" : "%SERVER_PORT%" }
-            ]
+            ],
+	    "portMappings": [
+    		{ "containerPort": %SERVER_PORT% }
+	    ]
         }
     ]
 }
